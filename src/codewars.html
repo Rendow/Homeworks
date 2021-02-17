@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+
+
+/*   //1
+    function positiveSum(arr) {
+
+        let positiveArr = arr.filter((elem) => elem > 0);
+        let res =  positiveArr.reduce((a, b) => a + b, 0);
+        return res
+    }
+
+    positiveSum([-2,3,4]);  */
+
+/*  //1.1
+function positiveSum(arr) {
+    let array = [2,1,4,5,...arr]
+    let total = 0;
+    for (i = 0; i < array.length; i++) {
+        if (array[i] > 0) {
+            total += array[i];
+        }
+    }
+    return total;
+}
+
+let arr = [2,2]
+
+positiveSum(arr)*/
+/*
+
+ //2
+
+function getAverage(marks){
+    const sum = marks.reduce((a, b) => a + b, 0); // reduce проходит по массиву и вычисляет значение
+    const avg = (sum / marks.length) || 0; //показывает сумму деления или ноль
+    let res = Math.floor(avg) //округление в меньшую сторону
+    return res
+}
+getAverage([2,1,4,6])
+
+
+*/
+
+
+//3
+/*
+
+function hero(bullets, dragons){
+if ((bullets/2) >= dragons){
+    return true
+} else {return false}
+}
+console.log(hero(10,5))
+
+//3.1
+
+function hero(bullets, dragons){
+    return bullets >= dragons * 2
+}
+
+*/
+
+//4
+
+/*function warnTheSheep(queue) {
+
+   if(queue[queue.length - 1] === "wolf" ){ //последний эелемент массива
+       return "Pls go away and stop eating my sheep"
+   } else {
+       let res = queue.reverse()
+       let index = res.findIndex(i => i  === "wolf" ) // найти индекс волка
+       return ` Oi! Sheep number ${index}! You are about to be eaten by a wolf! `
+   }
+}
+
+console.log(warnTheSheep(["sheep", "sheep", "wolf"]))*/
+
+
+
+
+
+</script>
+</body>
+</html>

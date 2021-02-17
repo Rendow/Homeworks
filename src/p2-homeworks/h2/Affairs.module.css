@@ -1,0 +1,56 @@
+.allContent {
+    padding: 15px;
+}
+
+.affairs {
+
+
+}
+
+.selectButtons {
+    margin: 10px 0px;
+
+}
+
+.button {
+    margin: 20px 15px 0 10px;
+    background-color: rgba(103, 76, 71, 0.4);
+
+}
+
+.deleteButton {
+    background-color: rgba(103, 76, 71, 0.4);
+    width: 40px;
+    height: 25px;
+    margin: 0px;
+}
+
+.name {
+    margin: 0px 30px;
+    width: 80px;
+    height: 30px;
+}
+
+.task {
+    font: bold 100% sans-serif;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.low {
+    color: #71BC78;
+
+
+}
+
+.middle {
+    color: #FFB02E;
+
+}
+
+.high {
+    color: #AF2B1E;
+
+}
