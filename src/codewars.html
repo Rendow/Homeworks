@@ -13,83 +13,170 @@
 <script>
 
 
-/*   //1
-    function positiveSum(arr) {
+    /*   //1
+        function positiveSum(arr) {
 
-        let positiveArr = arr.filter((elem) => elem > 0);
-        let res =  positiveArr.reduce((a, b) => a + b, 0);
+            let positiveArr = arr.filter((elem) => elem > 0);
+            let res =  positiveArr.reduce((a, b) => a + b, 0);
+            return res
+        }
+
+        positiveSum([-2,3,4]);  */
+
+    /*  //1.1
+    function positiveSum(arr) {
+        let array = [2,1,4,5,...arr]
+        let total = 0;
+        for (i = 0; i < array.length; i++) {
+            if (array[i] > 0) {
+                total += array[i];
+            }
+        }
+        return total;
+    }
+
+    let arr = [2,2]
+
+    positiveSum(arr)*/
+    /*
+
+     //2
+
+    function getAverage(marks){
+        const sum = marks.reduce((a, b) => a + b, 0); // reduce проходит по массиву и вычисляет значение
+        const avg = (sum / marks.length) || 0; //показывает сумму деления или ноль
+        let res = Math.floor(avg) //округление в меньшую сторону
         return res
     }
+    getAverage([2,1,4,6])
 
-    positiveSum([-2,3,4]);  */
 
-/*  //1.1
-function positiveSum(arr) {
-    let array = [2,1,4,5,...arr]
-    let total = 0;
-    for (i = 0; i < array.length; i++) {
-        if (array[i] > 0) {
-            total += array[i];
+    */
+
+
+    //3
+    /*
+
+    function hero(bullets, dragons){
+    if ((bullets/2) >= dragons){
+        return true
+    } else {return false}
+    }
+    console.log(hero(10,5))
+
+    //3.1
+
+    function hero(bullets, dragons){
+        return bullets >= dragons * 2
+    }
+
+    */
+
+    //4
+
+    /*function warnTheSheep(queue) {
+
+       if(queue[queue.length - 1] === "wolf" ){ //последний эелемент массива
+           return "Pls go away and stop eating my sheep"
+       } else {
+           let res = queue.reverse()
+           let index = res.findIndex(i => i  === "wolf" ) // найти индекс волка
+           return ` Oi! Sheep number ${index}! You are about to be eaten by a wolf! `
+       }
+    }
+
+    console.log(warnTheSheep(["sheep", "sheep", "wolf"]))*/
+
+    //5
+
+    /*
+    function boolToWord( bool ){
+        if(bool === true){
+            return 'Yes'
+        }else{ return 'No'}
+    }
+    */
+
+    //6 - умножаем все элементы в массиве
+    /*function grow(x){
+        const sum = x.reduce((a, b) => a * b);
+        return sum
+    }
+    grow([2,1,1,6])*/
+
+
+
+    //7
+    /*    function uefaEuro2016(teams, scores) {
+            if (scores[0] === scores[1]) {
+                return `At match ${teams[0]} - ${teams[1]}, teams played draw.`
+            } else if (scores[0] > scores[1]) {
+                return `At match ${teams[0]} - ${teams[1]}, ${teams[0]} won!`
+            } else {
+                return `At match ${teams[0]} - ${teams[1]}, ${teams[1]} won!`
+            }
+        }
+
+        uefaEuro2016(['Portugal', 'Iceland'], [1, 1])*/
+
+    //8
+    /*    function getGrade (s1, s2, s3) {
+            const sum = [s1,s2,s3].reduce((a, b) => a + b)/3;
+
+            if (sum >= 90 && sum <= 100)
+            {return 'A';}
+            else if (sum >= 80 && sum <= 90)
+            {return'B';}
+            else if (sum >= 70 && sum <= 80)
+            {return 'C';}
+            else if (sum >= 60 && sum < 70)
+            {return'D';}
+            else if(sum <= 60)
+            {return 'F';}
+        }
+        //оптимальное решение
+        function getGrade (s1, s2, s3) {
+            avg = (s1+s2+s3)/3;
+            if (avg < 60)  return "F";
+            else if (avg < 70) return "D";
+            else if (avg < 80) return "C";
+            else if (avg < 90) return "B";
+            else return "A";
+        }*/
+
+    //9
+    /*    function rentalCarCost(d) {
+            if (d < 3) {
+                return d * 40
+            } else if ( d < 7) {
+                return d * 40 - 20
+            } else if (d >= 7) {
+                return d * 40 - 50
+            }
+        }
+        rentalCarCost(7)*/
+
+    //10
+
+/*    function century(year) {
+        let sum = year / 100
+
+        function isInteger(sum){
+            return (sum^0) === sum // ^ - побитовый оператор, выбирает наибольшее целое значение (12.3 ^ 0) = 0; (12 ^ 0) = 12
+        }
+        if(isInteger(sum)){
+            return sum
+        }else{
+            sum += 1
+            let res = Math.floor(sum)
+            return res
         }
     }
-    return total;
-}
-
-let arr = [2,2]
-
-positiveSum(arr)*/
-/*
-
- //2
-
-function getAverage(marks){
-    const sum = marks.reduce((a, b) => a + b, 0); // reduce проходит по массиву и вычисляет значение
-    const avg = (sum / marks.length) || 0; //показывает сумму деления или ноль
-    let res = Math.floor(avg) //округление в меньшую сторону
-    return res
-}
-getAverage([2,1,4,6])
-
-
-*/
-
-
-//3
-/*
-
-function hero(bullets, dragons){
-if ((bullets/2) >= dragons){
-    return true
-} else {return false}
-}
-console.log(hero(10,5))
-
-//3.1
-
-function hero(bullets, dragons){
-    return bullets >= dragons * 2
-}
-
-*/
-
-//4
-
-/*function warnTheSheep(queue) {
-
-   if(queue[queue.length - 1] === "wolf" ){ //последний эелемент массива
-       return "Pls go away and stop eating my sheep"
-   } else {
-       let res = queue.reverse()
-       let index = res.findIndex(i => i  === "wolf" ) // найти индекс волка
-       return ` Oi! Sheep number ${index}! You are about to be eaten by a wolf! `
-   }
-}
-
-console.log(warnTheSheep(["sheep", "sheep", "wolf"]))*/
-
-
-
-
+//оптимальное
+    function century(year) {
+        return Math.ceil(year/100); // округление вверх до ближайшего большего числа
+    }
+    century(1700)*/
 
 </script>
 </body>

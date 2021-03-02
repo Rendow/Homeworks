@@ -1,7 +1,32 @@
-.someClass {
-
+.greeting {
+    margin: 10px 0px 10px 40px;
+    display: flex;
+    align-items: flex-start;
 }
-
 .error {
     border: 1px solid red;
+}
+
+.errorMessage {
+    color: darkred;
+    height: 30px;
+}
+.buttonContainer {
+    padding-left: 10px;
+}
+
+.addButton {
+    background-color: rgba(18,47,170,0.6);
+    width: 50px;
+    outline: none;
+    box-shadow: 1px 1px 10px #C0C0C0;
+}
+
+.count {
+    margin-left: 10px;
+    font-size: 1em;
+}
+.input{
+    box-shadow: 1px 1px 10px #C0C0C0;
+    outline: none;
 }
