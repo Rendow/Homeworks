@@ -23,6 +23,7 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
 
         ...restProps// все остальные пропсы попадут в объект restProps
     }
+    //т.е мы пишем,какие пропсы будем использовать, а остальные отправляем в рестПропс
 ) => {
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
         onChange // если есть пропс onChange
@@ -39,8 +40,7 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
     }
 
     const finalSpanClassName = `${s.error} ${spanClassName ? spanClassName : ''}`
-    const finalInputClassName = `${s.errorInput} ${className}` // need to fix with (?:) and s.superInput
-
+    const finalInputClassName =  error ? `${s.errorInput}  ${s.superInput} ${className ? className : ''}` : `${s.superInput} ${className ? className : ''}`
     return (
         <>
             <input
