@@ -20,7 +20,9 @@
 }
 
 .deleteButton {
-    background-color: rgba(103, 76, 71, 0.4);
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(252, 252, 246, 0.7);
     width: 40px;
     height: 25px;
     margin: 0px;
@@ -42,16 +44,16 @@
 
 .low {
     color: #71BC78;
-
+    font-style: italic;
 
 }
 
 .middle {
     color: #FFB02E;
-
+    font-style: italic;
 }
 
 .high {
     color: #AF2B1E;
-
+    font-style: italic;
 }
