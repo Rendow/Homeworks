@@ -8,14 +8,15 @@
 }
 
 .selectButtons {
-    margin: 10px 0px;
-
+    padding: 2px 5px;
 }
 
 .buttonConteiner {
-    margin: 20px 15px 0 10px;
-    background-color: rgba(103, 76, 71, 0.4);
-
+    margin: 20px 0 0 30px;
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .deleteButton {
