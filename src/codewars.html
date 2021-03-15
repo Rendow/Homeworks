@@ -8,7 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-<img src="../../React-samurai/Схема.png" alt="">
 
 <script>
 
@@ -285,6 +284,38 @@ reverseWords("The greatest victory is that which requires no battle")
     function detect(comment) {
         return comment.search("Can someone explain") === 0 ? true : false;
     }*/
+    //24
+/*    function findDifference(a, b) {
+        const first = a.reduce((a, b) => a * b);
+        const second = b.reduce((a, b) => a * b);
+        let sum = first - second > 0? first - second : second - first
+        return sum
+    }
+//analog
+    function find_difference(a, b) {
+        return Math.abs(a.reduce((previous, current) => previous * current) - b.reduce((previous, current) => previous * current));
+    }
+    console.log(findDifference([3, 2, 5], [1, 4, 4])*/
+    //25
+/*    function twiceAsOld(dadYearsOld, sonYearsOld) {
+    let i = 0
+    while (dadYearsOld !== sonYearsOld*2){
+        dadYearsOld--
+        i++
+        if(dadYearsOld < sonYearsOld*2){
+            sonYearsOld--
+        }
+    }
+       return i
+    }
+    //analog
+    function twiceAsOld(dadYearsOld, sonYearsOld) {
+        debugger
+        return Math.abs(dadYearsOld - 2 * sonYearsOld);
+    }
+//Math.abs всегда возвращает положительное число
+
+    console.log(twiceAsOld(55,30))*/
 
 </script>
 </body>
