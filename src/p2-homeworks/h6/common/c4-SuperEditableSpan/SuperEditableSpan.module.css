@@ -1,0 +1,7 @@
+.span {
+    display: inline-block;
+    cursor: pointer;
+    height: 23px;
+    padding: 10px 15px;
+    color: rebeccapurple;
+}

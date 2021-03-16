@@ -1,15 +1,15 @@
 .superInput {
-
-    border-radius: 5px;
     outline: none;
     margin: 10px;
 }
-.superInput:focus{
+
+.superInput:focus {
     box-shadow: 1px 1px 10px #C0C0C0;
 }
+
 .errorInput {
-    border: 2px solid  darkred;
-    background:aliceblue;
+    border: 2px solid darkred;
+    background: aliceblue;
 }
 
 .error {
