@@ -1,0 +1,24 @@
+.select {
+    width: 100px;
+    padding: 5px;
+    margin: 10px;
+
+    cursor: pointer;
+    background-color: plum;
+
+    border: 2px inset  blueviolet;
+}
+.select:focus{
+    border: 2px  cadetblue;
+    outline: none;
+}
+
+.option {
+
+}
+.option:focus {
+
+}
+.option:checked {
+
+}

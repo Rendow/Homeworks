@@ -1,14 +1,22 @@
 
 .body {
     background-color: #95c2de;
+    height: 100vh;
+
 }
 
 .mainbox {
     background-color: #95c2de;
-    margin: auto;
+    margin:  auto;
     height: 600px;
     width: 600px;
-    position: relative;
+
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .err {
