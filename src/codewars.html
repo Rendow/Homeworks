@@ -9,7 +9,7 @@
 
 </head>
 <body>
-
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto autem consequuntur dicta dolor est, eveniet ex exercitationem harum illum minus molestias perspiciatis, praesentium, quas quidem quisquam repellendus ullam velit.</div>
 <script>
 
 
@@ -158,227 +158,227 @@
 
     //10
 
-/*    function century(year) {
-        let sum = year / 100
+    /*    function century(year) {
+            let sum = year / 100
 
-        function isInteger(sum){
-            return (sum^0) === sum // ^ - побитовый оператор, выбирает наибольшее целое значение (12.3 ^ 0) = 0; (12 ^ 0) = 12
+            function isInteger(sum){
+                return (sum^0) === sum // ^ - побитовый оператор, выбирает наибольшее целое значение (12.3 ^ 0) = 0; (12 ^ 0) = 12
+            }
+            if(isInteger(sum)){
+                return sum
+            }else{
+                sum += 1
+                let res = Math.floor(sum)
+                return res
+            }
         }
-        if(isInteger(sum)){
-            return sum
-        }else{
-            sum += 1
-            let res = Math.floor(sum)
+    //оптимальное
+        function century(year) {
+            return Math.ceil(year/100); // округление вверх до ближайшего большего числа
+        }
+        century(1700)*/
+
+
+    /*//11
+    function makeNegative(num) {
+      retutn -Math.abs(num); // делает число отрицательным
+    }
+
+    makeNegative(2)
+    //analog
+    function makeNegative(num) {
+      return num < 0 ? num : -num;
+    }
+
+    //12
+    function paperwork(n, m) {
+      if(n <0){
+          return 0
+      }else if(m<0){
+    return 0
+      }
+      return m*n
+    }
+    paperwork(3,-2)
+
+    //analog
+    function paperwork(n, m) {
+      return n > 0 && m > 0 ? n * m : 0
+    }
+
+    //13
+
+    function reverseWords(str){
+        return s.split(" ").reverse().join(" "); //пробел в сплит разбивает слова в зависимости от символа(тут пробел)
+    }
+    reverseWords("The greatest victory is that which requires no battle")
+
+    //14
+
+        function move (position, roll) {
+             return position + roll*2
+        }
+    //15
+        function sum (num){
+            let arr = []
+            let d = 0
+            let res = 0
+            while( d <= num){
+                arr.push(d)
+                d++
+            }
+           for(i=0;i<arr.length;i++){
+               res = res+arr[i]
+           }
+           return res
+        }
+        sum(8)
+        //analog
+        function sum (num){
+            let res = 0
+            for(i=0;i<=num;i++){
+                res += i
+            }
             return res
         }
-    }
-//оптимальное
-    function century(year) {
-        return Math.ceil(year/100); // округление вверх до ближайшего большего числа
-    }
-    century(1700)*/
-
-
-/*//11
-function makeNegative(num) {
-  retutn -Math.abs(num); // делает число отрицательным
-}
-
-makeNegative(2)
-//analog
-function makeNegative(num) {
-  return num < 0 ? num : -num;
-}
-
-//12
-function paperwork(n, m) {
-  if(n <0){
-      return 0
-  }else if(m<0){
-return 0
-  }
-  return m*n
-}
-paperwork(3,-2)
-
-//analog
-function paperwork(n, m) {
-  return n > 0 && m > 0 ? n * m : 0
-}
-
-//13
-
-function reverseWords(str){
-    return s.split(" ").reverse().join(" "); //пробел в сплит разбивает слова в зависимости от символа(тут пробел)
-}
-reverseWords("The greatest victory is that which requires no battle")
-
-//14
-
-    function move (position, roll) {
-         return position + roll*2
-    }
-//15
-    function sum (num){
-        let arr = []
-        let d = 0
-        let res = 0
-        while( d <= num){
-            arr.push(d)
-            d++
+        sum(8)*/
+    /*//21
+        function booleanToString(b){
+          return b.toString()
         }
-       for(i=0;i<arr.length;i++){
-           res = res+arr[i]
-       }
-       return res
-    }
-    sum(8)
-    //analog
-    function sum (num){
-        let res = 0
-        for(i=0;i<=num;i++){
-            res += i
+        booleanToString(true)*/
+
+    /*
+        //22
+        function stringy(size) {
+            let res = []
+          for(i = 0; i < size; i++){
+                res.push(10)
+            }
+            return  res.toString().replace(/[\s.,%]/g, '')
         }
-        return res
-    }
-    sum(8)*/
-/*//21
-    function booleanToString(b){
-      return b.toString()
-    }
-    booleanToString(true)*/
 
-/*
-    //22
-    function stringy(size) {
-        let res = []
-      for(i = 0; i < size; i++){
-            res.push(10)
+        function stringy(size) {
+            let str = '';
+
+            for (let i = 1; i <= size; i++) {
+                str = str + i%2
+            }
+            return str;
         }
-        return  res.toString().replace(/[\s.,%]/g, '')
-    }
 
-    function stringy(size) {
-        let str = '';
-
-        for (let i = 1; i <= size; i++) {
-            str = str + i%2
-        }
-        return str;
-    }
-
-    % - остаток от деления - 5/2 - остаток 1, 6/2 - остаток 0
-*/
+        % - остаток от деления - 5/2 - остаток 1, 6/2 - остаток 0
+    */
     //23
-/*    let str = 'Can someone explain to me what this kata is about?';
-    function detect(comment) {
-     let res =  comment.slice(0,19)
-        if(res === "Can someone explain"){
-            return true
-        }else { return false}
-    }
-    detect(str)
-    //analog
-    const detect = comment => comment.startsWith('Can someone explain')
-
-    //analog
-    function detect(comment) {
-        return comment.search("Can someone explain") === 0 ? true : false;
-    }*/
-    //24
-/*    function findDifference(a, b) {
-        const first = a.reduce((a, b) => a * b);
-        const second = b.reduce((a, b) => a * b);
-        let sum = first - second > 0? first - second : second - first
-        return sum
-    }
-//analog
-    function find_difference(a, b) {
-        return Math.abs(a.reduce((previous, current) => previous * current) - b.reduce((previous, current) => previous * current));
-    }
-    console.log(findDifference([3, 2, 5], [1, 4, 4])*/
-    //25
-/*    function twiceAsOld(dadYearsOld, sonYearsOld) {
-    let i = 0
-    while (dadYearsOld !== sonYearsOld*2){
-        dadYearsOld--
-        i++
-        if(dadYearsOld < sonYearsOld*2){
-            sonYearsOld--
+    /*    let str = 'Can someone explain to me what this kata is about?';
+        function detect(comment) {
+         let res =  comment.slice(0,19)
+            if(res === "Can someone explain"){
+                return true
+            }else { return false}
         }
-    }
-       return i
-    }
-    //analog
-    function twiceAsOld(dadYearsOld, sonYearsOld) {
-        debugger
-        return Math.abs(dadYearsOld - 2 * sonYearsOld);
-    }
-//Math.abs всегда возвращает положительное число
+        detect(str)
+        //analog
+        const detect = comment => comment.startsWith('Can someone explain')
 
-    console.log(twiceAsOld(55,30))*/
+        //analog
+        function detect(comment) {
+            return comment.search("Can someone explain") === 0 ? true : false;
+        }*/
+    //24
+    /*    function findDifference(a, b) {
+            const first = a.reduce((a, b) => a * b);
+            const second = b.reduce((a, b) => a * b);
+            let sum = first - second > 0? first - second : second - first
+            return sum
+        }
+    //analog
+        function find_difference(a, b) {
+            return Math.abs(a.reduce((previous, current) => previous * current) - b.reduce((previous, current) => previous * current));
+        }
+        console.log(findDifference([3, 2, 5], [1, 4, 4])*/
+    //25
+    /*    function twiceAsOld(dadYearsOld, sonYearsOld) {
+        let i = 0
+        while (dadYearsOld !== sonYearsOld*2){
+            dadYearsOld--
+            i++
+            if(dadYearsOld < sonYearsOld*2){
+                sonYearsOld--
+            }
+        }
+           return i
+        }
+        //analog
+        function twiceAsOld(dadYearsOld, sonYearsOld) {
+            debugger
+            return Math.abs(dadYearsOld - 2 * sonYearsOld);
+        }
+    //Math.abs всегда возвращает положительное число
+
+        console.log(twiceAsOld(55,30))*/
 
     //26 - повтор строки
-/*
-    function repeatStr (n, s) {
-        let res = []
-        for(i = 0; i < n; i++){
-            res.push(s)
+    /*
+        function repeatStr (n, s) {
+            let res = []
+            for(i = 0; i < n; i++){
+                res.push(s)
+            }
+            return res.join('');
         }
-        return res.join('');
-    }
-    //analog
-    function repeatStr (n, s) {
-        return s.repeat(n);
-    }
-*/
+        //analog
+        function repeatStr (n, s) {
+            return s.repeat(n);
+        }
+    */
 
     //27
-/*
-    function mergeArrays(arr1, arr2) {
-         let arr = [...arr1,...arr2]
-        let res = [...new Set(arr)]
+    /*
+        function mergeArrays(arr1, arr2) {
+             let arr = [...arr1,...arr2]
+            let res = [...new Set(arr)]
 
-        //set добавляет только уникальные элементы в массив
+            //set добавляет только уникальные элементы в массив
 
-        return res.sort((a,b) => a > b ? 1 : -1 )
-    }
+            return res.sort((a,b) => a > b ? 1 : -1 )
+        }
 
-    console.log(mergeArrays([13,4,4],[13,4,1,3,2]))
-*/
-//28
+        console.log(mergeArrays([13,4,4],[13,4,1,3,2]))
+    */
+    //28
 
-  /*  function feast(beast, dish) {
-        if (beast[0] === dish[0] && beast[beast.length-1] === dish[dish.length-1] ) {
-            return true
-        } return false
-    }
+    /*  function feast(beast, dish) {
+          if (beast[0] === dish[0] && beast[beast.length-1] === dish[dish.length-1] ) {
+              return true
+          } return false
+      }
 
-    console.log(feast ("great blue heron", "garlic naan"))*/
+      console.log(feast ("great blue heron", "garlic naan"))*/
     //29
 
-   /* function noSpace(x){
-        return x.split(' ').join('')
-    }
-    //analog
-    function noSpace(x){
-        return x.replace(/\s+/g,'')
-    }*/
-//30
+    /* function noSpace(x){
+         return x.split(' ').join('')
+     }
+     //analog
+     function noSpace(x){
+         return x.replace(/\s+/g,'')
+     }*/
+    //30
     /*function stringToArray(string){
          return string.split(' ')
 
     }
 
     console.log(stringToArray ("great blue heron"))*/
-//31 - перевод км\ч в см\с
+    //31 - перевод км\ч в см\с
     /*function cockroachSpeed(s) {
         let res = s*100000/3600
         return Math.floor(res)
     }
     console.log(cockroachSpeed (1))
     */
-//32 - заменить Т на U
+    //32 - заменить Т на U
     /*function DNAtoRNA(dna) {
         let res = dna.split('').map(a => {
             if(a === 'T'){
@@ -399,50 +399,140 @@ reverseWords("The greatest victory is that which requires no battle")
     console.log(DNAtoRNA ("GCAT"))
 */
 
-//33
-/*
-    function isVow(a) {
-        let res = a.map(a =>{
-            if(a===97){
-                return 'a'
-            } else if(a===101){
-                return 'e'
-            }else if(a===105){
-                return 'i'
-            }else if(a===111){
-                return 'o'
-            }else if(a===117){
-                return 'u'
+    //33
+    /*
+        function isVow(a) {
+            let res = a.map(a =>{
+                if(a===97){
+                    return 'a'
+                } else if(a===101){
+                    return 'e'
+                }else if(a===105){
+                    return 'i'
+                }else if(a===111){
+                    return 'o'
+                }else if(a===117){
+                    return 'u'
+                }
+                return a
+            })
+               return res
+        }
+        //analog
+
+        function isVow(a){
+           let d = {97:'a', 101:'e',105:'i', 111:'o',117:'u'}
+            return a.map(e => d[e] ? d[e] : e)
+        }
+        //например е = 97
+        //тогда, d.97 тру? да. ретурн д.97(где 97 = ключ, а значение - а), иначе ретурн е
+
+        console.log(isVow([101, 121, 110, 113, 113, 103, 121, 121, 101, 107, 103]))
+    */
+    /*
+        //34
+        function findLongest(str) {
+            var spl = str.split(" ");
+            var longest = 0
+            for (var i = 0; i < spl.length; i ++) {
+                if (spl[i].length > longest) {
+                    longest = spl[i].length
+                }
             }
-            return a
-        })
-           return res
+        return longest
+        }
+        console.log(findLongest("Sausage chops"))
+        */
+
+    //35
+    /* function logicalCalc(array, op){
+         switch (op){
+             case 'AND':
+                 return array.reduce( (a,b) => a && b)
+             case 'OR':
+                 return   array.reduce( (a,b) => a || b)
+             case 'XOR':
+                 return   array.reduce( (a,b) => a !== b)
+             default:
+                 return array
+         }
+     }
+     console.log(logicalCalc([true, false, false, false], "XOR"))*/
+
+    //36
+/*    function pipeFix(numbers) {
+        let last = numbers[numbers.length - 1] // последний элемент в массиве ( тут - 4)
+        let arr = []
+        for (i = numbers[0]; i <= last; i++) {
+            arr.push(i)
+        }
+        return arr
     }
+
+    console.log(pipeFix([-1, 4]))*/
+
+
+    //37 - убрать !
+
+/*    function removeExclamationMarks(s) {
+        let res = s.split('').map(l => {
+            if(l === '!'){
+                return ''
+            }
+            return l
+        });
+        return res.join('')
+    }
+ //analog
+    function removeExclamationMarks(s) {
+        return s.replace(/!/gi, '');
+    }
+    console.log(removeExclamationMarks("Hello Wo!rl!d!"))*/
+
+    //38 - мин число
+/*
+    function findSmallestInt(n){
+      return Math.min.apply(null, n)
+    }
+
+    console.log(findSmallestInt([1,56,232,12,8]))*/
+
+    //40
+   /* const quarterOf = (month) => {
+        if (month <= 3) {
+            return 1
+        } else if (month <= 6) {
+            return 2
+        } else if (month <= 9) {
+            return 3
+        } else {
+            return 4
+        }
+    }
+//analog
+    const quarterOf = (month) => {
+        return Math.ceil(month / 3);
+        //округляет вверх до ближ. целого числа
+    }*/
+//41
+/*
+    function highAndLow(n) {
+        let arr = []
+        let num = n.split(' ').filter( a => a !== '')
+        arr.push(num.reduce((a, b) => +a > +b ? +a : +b ))
+        arr.push(num.reduce((a, b) => +a < +b ? +a : +b))
+        return arr.join(' ')
+    }
+
     //analog
 
-    function isVow(a){
-       let d = {97:'a', 101:'e',105:'i', 111:'o',117:'u'}
-        return a.map(e => d[e] ? d[e] : e)
+    function highAndLow(numbers){
+        numbers = numbers.split(' ').map(Number); //тут с помощью мапа превращаем сроки в числа
+        return Math.max.apply(0, numbers) + ' ' + Math.min.apply(0, numbers);
     }
-    //например е = 97
-    //тогда, d.97 тру? да. ретурн д.97(где 97 = ключ, а значение - а), иначе ретурн е
-
-    console.log(isVow([101, 121, 110, 113, 113, 103, 121, 121, 101, 107, 103]))
+    console.log(highAndLow("4 5 29 54 4 0 6 -6 -214 542 -64 1 -3 "))
 */
-/*
-    //34
-    function findLongest(str) {
-        var spl = str.split(" ");
-        var longest = 0
-        for (var i = 0; i < spl.length; i ++) {
-            if (spl[i].length > longest) {
-                longest = spl[i].length
-            }
-        }
-    return longest
-    }
-    console.log(findLongest("Sausage chops"))
-    */
+
 
 </script>
 </body>

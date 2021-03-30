@@ -1,0 +1,17 @@
+.wrap{
+     padding: 10px;
+}
+.buttons{
+    display: flex;
+}
+.users{
+    padding: 2px;
+    display: flex;
+    width: 220px;
+    justify-content: space-between;
+    font-size: 18px;
+    color: navy;
+}
+.usersWrap{
+    margin: 10px;
+}
