@@ -532,6 +532,71 @@
     }
     console.log(highAndLow("4 5 29 54 4 0 6 -6 -214 542 -64 1 -3 "))
 */
+    //42 accum("abcd") -> "A-Bb-Ccc-Dddd"
+/*
+
+    function accum(s) {
+        let arr = s.toLowerCase().split('')
+        let res = []
+        for(i=0; i < arr.length; i++){
+            res.push(arr[i].repeat(i+1))
+        }
+        return res.map(w => {
+            return w[0].toUpperCase() + w.slice(1)
+        }).join('-')
+    }
+//analog
+function accum(s) {
+  return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
+}
+// i - индекс данного элемента
+
+*/
+    //43  "test" => "es"; "tet" => "e"
+/*
+
+/!*    function getMiddle(s) {
+        let arr = []
+        let res = s.split('')
+        let w1 = res.length / 2 -1
+        let w2 = res.length / 2
+        let w3 = Math.ceil(res.length / 2 -1)
+            if (res.length % 2 === 0) {
+                for (i = 0; i < res.length; i++) {if (i === w1 || i === w2) {
+                    arr.push(res[i])
+                }}
+            } else {
+                arr.push(res[w3])
+            }
+        return arr.join('')
+    }*!/
+//analog
+    function getMiddle(s) {
+        return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
+    }
+
+    //[t,e,s,t].substr(1,2) => 'es'
+    console.log(getMiddle("tetr"))
+
+//analog
+    function getMiddle(s) {
+        return s.slice((s.length-1)/2, s.length/2+1);
+    }
+*/
+//44 lol -> ll
+
+ /*   function disemvowel(str) {
+      /!*  return str.split('').map(string => string.replace(/[aeiouAEIOU]/g, '')).join('');*!/
+        return str.replace(/[aeiou]/gi, '')
+    }
+*/
+    /*
+    g - tells to find all matches, not just the first.
+    i - tells to be case insensitive(игнорирует регистр, без i заглавная буква не будет заменена)
+    What goes inside the // is the pattern.
+    [] tells to match any character in a set.
+    aeiou are the characters in the set.
+    */
 
 
 </script>
