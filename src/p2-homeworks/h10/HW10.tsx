@@ -1,14 +1,21 @@
-import React from "react";
-import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
+import React from 'react'
+import s from './hw10.module.css'
+import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import {useDispatch, useSelector} from "react-redux";
+import {AppStoreType} from "./bll/store";
+import {initStateType, loadingAC} from "./bll/loadingReducer";
 
 function HW10() {
-    // useSelector, useDispatch
-    const loading = false;
+    let loading = useSelector<AppStoreType,initStateType>(state => state.loading)
+    let dispatch = useDispatch()
+    //const loading = false
 
     const setLoading = () => {
-        // dispatch
-        // setTimeout
-        console.log("loading...");
+        dispatch(loadingAC())
+        setTimeout(() =>{
+            dispatch(loadingAC())
+        },2000)
+        console.log('loading...')
     };
 
     return (
@@ -17,12 +24,16 @@ function HW10() {
             homeworks 10
 
             {/*should work (должно работать)*/}
-            {loading
+            {loading.loading
                 ? (
-                    <div>крутилка...</div>
+                    <div className={s.ldsFacebook}>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 ) : (
-                    <div>
-                        <SuperButton onClick={setLoading}>set loading...</SuperButton>
+                    <div >
+                        <SuperButton className={s.button} onClick={setLoading}>set loading...</SuperButton>
                     </div>
                 )
             }
@@ -32,7 +43,7 @@ function HW10() {
             {/*<Alternative/>*/}
             <hr/>
         </div>
-    );
+    )
 }
 
-export default HW10;
+export default HW10
