@@ -1,7 +1,8 @@
-
+.wrap{
+    margin-left: 11px;
+}
 .clock{
     padding: 5px 0 5px 15px;
     font-size: 18px;
     color: navy;
-
 }

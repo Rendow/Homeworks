@@ -9,6 +9,7 @@
 
 </head>
 <body>
+
 <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto autem consequuntur dicta dolor est, eveniet ex exercitationem harum illum minus molestias perspiciatis, praesentium, quas quidem quisquam repellendus ullam velit.</div>
 <script>
 
@@ -597,6 +598,41 @@ function accum(s) {
     [] tells to match any character in a set.
     aeiou are the characters in the set.
     */
+
+//45 колво гласных
+   /* function getCount(str) {
+        let vowelsCount = 0;
+        str.split('').map(l =>{
+            if(l === 'a' ||l === 'e' ||l === 'i' ||l === 'o' ||l === 'u'){
+                vowelsCount += 1
+            }
+        })
+        return vowelsCount;
+    }*/
+
+/*
+ //analog
+    function getCount(str) {
+        return str.replace(/[^aeiou]/gi, '').length;
+    }*/
+
+    //analog
+/*    function getCount(str) {
+        return (str.match(/[aeiou]/ig)||[]);
+    }
+    console.log(getCount("abracadabra"))*/
+/*
+
+// match
+var str = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЫЪЭЮЯабвгдеёжзийклмнопрстуфхцчшщьыъэюя';
+var regexp = /[А-Д]/gi;
+var matches_array = str.match(regexp);
+
+console.log(matches_array);
+// ['А', 'Б', 'В', 'Г', 'Д', 'а', 'б', 'в', 'г', 'д']
+
+*/
+
 
 
 </script>

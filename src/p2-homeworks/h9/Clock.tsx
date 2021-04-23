@@ -25,11 +25,11 @@ function Clock() {
         setShow(false)
     }
 
-    const stringTime = date.toLocaleTimeString() /*`Time: ${timerId}`*/ // fix with date
-    const stringDate = date.toLocaleDateString()    //`Date: ${date}` // fix with date
+    const stringTime = date?.toLocaleTimeString()
+    const stringDate = date?.toLocaleDateString()
 
     return (
-        <div>
+        <div className={s.wrap}>
             <div className={s.clock}>
                 <div
                 onMouseEnter={onMouseEnter}
