@@ -19,6 +19,6 @@ export type DispatchType = loadingACType
 
 type loadingACType = ReturnType<typeof loadingAC>
 
-export const loadingAC = (): any => {
+export const loadingAC = () => {
    return {type: LOADING_TYPE} as const
 }

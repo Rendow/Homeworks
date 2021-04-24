@@ -3,12 +3,12 @@ import s from './hw10.module.css'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "./bll/store";
-import {initStateType, loadingAC} from "./bll/loadingReducer";
+import {loadingAC} from "./bll/loadingReducer";
 
 function HW10() {
-    let loading = useSelector<AppStoreType,initStateType>(state => state.loading)
+    let loading = useSelector<AppStoreType,boolean>(state => state.loading.loading)
     let dispatch = useDispatch()
-    //const loading = false
+
 
     const setLoading = () => {
         dispatch(loadingAC())
@@ -24,7 +24,7 @@ function HW10() {
             homeworks 10
 
             {/*should work (должно работать)*/}
-            {loading.loading
+            {loading
                 ? (
                     <div className={s.ldsFacebook}>
                         <div></div>
