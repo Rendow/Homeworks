@@ -1,4 +1,4 @@
-import React, {ChangeEvent, DetailedHTMLProps, InputHTMLAttributes} from 'react'
+import React, {DetailedHTMLProps, InputHTMLAttributes} from 'react'
 import s from './SuperRange.module.css'
 import Slider from "rc-slider/lib/Slider";
 
@@ -8,7 +8,7 @@ type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElem
 // здесь мы говорим что у нашего инпута будут такие же пропсы как у обычного инпута
 // (чтоб не писать value: string, onChange: ...; они уже все описаны в DefaultInputPropsType)
 type SuperRangePropsType = DefaultInputPropsType & { // и + ещё пропсы которых нет в стандартном инпуте
-    onChangeRange?: (value: number) => void
+    onChangeRange: (value: number) => void
     value:number
 };
 
@@ -29,15 +29,14 @@ const SuperRange: React.FC<SuperRangePropsType> = (
     const finalRangeClassName = `${s.range} ${className ? className : ''}`
 
     return (
-        <>
+        <div className={finalRangeClassName}>
             <Slider
                 style={{width: '400px'}}
                 onChange={onChangeCallback}
-                className={finalRangeClassName}
                 value={value}
 
             />
-         </>
+         </div>
     )
 }
 

@@ -27,6 +27,7 @@ function HW11() {
                 <span className={s.number}>{value1}</span>
                 <SuperDoubleRange
                     onChangeRange={setValue1}
+                    onChangeRange2={setValue2}
                     value1={value1}
                     value2={value2}
 

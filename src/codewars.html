@@ -633,7 +633,25 @@ console.log(matches_array);
 
 */
 
+//46  313 => 919(в квадрат)
+    //
+    // function squareDigits(num) {
+    //     let res =  num.toString().split('').map(Number).map(n => Math.pow(n,2))
+    //     return  Number(res.join(''))
+    // }
+    //
+    // console.log(squareDigits(3212))
 
+//47 Input: 42145 Output: 54421
+
+    function descendingOrder(n){
+        let res = n.toString()
+        let arr = Array.from(res).map(Number).sort((a,b) => a > b ? -1 : 1).join('')
+     return Number(arr)
+    }
+
+    //вместо split('') можно использовать Array.from()
+    console.log(descendingOrder(15))
 
 </script>
 </body>
