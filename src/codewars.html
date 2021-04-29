@@ -556,7 +556,7 @@ function accum(s) {
     //43  "test" => "es"; "tet" => "e"
 /*
 
-/!*    function getMiddle(s) {
+    function getMiddle(s) {
         let arr = []
         let res = s.split('')
         let w1 = res.length / 2 -1
@@ -570,7 +570,8 @@ function accum(s) {
                 arr.push(res[w3])
             }
         return arr.join('')
-    }*!/
+    }
+
 //analog
     function getMiddle(s) {
         return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
@@ -587,7 +588,7 @@ function accum(s) {
 //44 lol -> ll
 
  /*   function disemvowel(str) {
-      /!*  return str.split('').map(string => string.replace(/[aeiouAEIOU]/g, '')).join('');*!/
+       return str.split('').map(string => string.replace(/[aeiouAEIOU]/g, '')).join('');
         return str.replace(/[aeiou]/gi, '')
     }
 */
@@ -644,14 +645,56 @@ console.log(matches_array);
 
 //47 Input: 42145 Output: 54421
 
-    function descendingOrder(n){
-        let res = n.toString()
-        let arr = Array.from(res).map(Number).sort((a,b) => a > b ? -1 : 1).join('')
-     return Number(arr)
-    }
+    // function descendingOrder(n){
+    //     let res = n.toString()
+    //     let arr = Array.from(res).map(Number).sort((a,b) => a > b ? -1 : 1).join('')
+    //  return Number(arr)
+    // }
+    //
+    // //вместо split('') можно использовать Array.from()
+    // console.log(descendingOrder(15)
 
-    //вместо split('') можно использовать Array.from()
-    console.log(descendingOrder(15))
+//47 повторяющиеся буквы - false
+
+    // function isIsogram(str){
+    //     let arr = []
+    //     let res = str.toLowerCase().split('')
+    //     for(i = 0;i < res.length; i++){
+    //         for(j = i+1;j < res.length; j++){
+    //             if(res[i] === res[j]){
+    //                 arr.push(res[i])
+    //             }
+    //         }
+    //     }
+    //     return arr.length === 0
+    // }
+
+    //analog
+
+    // function isIsogram(str){
+    //     str = str.toLowerCase();
+    //     for(i = 0; i < str.length; ++i) {
+    //         for(j = i + 1; j < str.length; ++j) {
+    //             if(str[i] === str[j]) {
+    //                 return false;
+    //             }
+    //         }
+    //     }
+    //     return true;
+    // }
+    //
+
+     //analog
+    // function isIsogram(str){
+    //     //Create array from string and make it uppercased
+    //     let arr = str.toUpperCase().split('')
+    //     //Test each value for duplicates.
+    //     return arr.every(function(el) {
+    //         //indexOf(el) === arr.lastIndexOf(el); если первый индекс = последнему, значит элемент в массиве один(ретурн тру)
+    //         return arr.indexOf(el) === arr.lastIndexOf(el);
+    //     });
+    // }
+    console.log(isIsogram("Aba"))
 
 </script>
 </body>
