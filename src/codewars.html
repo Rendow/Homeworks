@@ -654,7 +654,7 @@ console.log(matches_array);
     // //вместо split('') можно использовать Array.from()
     // console.log(descendingOrder(15)
 
-//47 повторяющиеся буквы - false
+//48 повторяющиеся буквы - false
 
     // function isIsogram(str){
     //     let arr = []
@@ -694,8 +694,72 @@ console.log(matches_array);
     //         return arr.indexOf(el) === arr.lastIndexOf(el);
     //     });
     // }
-    console.log(isIsogram("Aba"))
 
+
+          //49 shortest word
+
+//     function findShort(s) {
+//
+//         let res = s.split(' ')
+//         let shortWord = res[0].length
+//
+//         for (i = 0; i < res.length; i++) {
+//             if (res[i].length < shortWord) {
+//                 shortWord = res[i].length
+//             }
+//         }
+//         return shortWord
+//     }
+//     console.log(findShort("bitcoin take over the world maybe who knows perhaps"))
+//
+// //analog
+//     function findShortestWord(str) {
+//         let words = str.split(' ');
+//         let shortest = words.reduce((shortestWord, currentWord) => {
+//             return currentWord.length < shortestWord.length ? currentWord : shortestWord;
+//         }, words[0]);
+//         return shortest.length;
+//     }
+//
+//
+// //analog
+//     function findShort(s){
+//         return Math.min(...s.split(" ").map (s => s.length));
+//     }
+//
+// // longest word
+//     function findLongestWord(str) {
+//         let strSplit = str.split(' ');
+//         let longestWord = 0;
+//         for(i = 0; i < strSplit.length; i++){
+//             if(strSplit[i].length > longestWord){
+//                 longestWord = strSplit[i].length;
+//             }
+//         }
+//         return longestWord;
+//     }
+
+
+       //50 square number
+//
+//     var isSquare = function(n){
+//         let res
+//         if(n < 0){
+//             res = false
+//         } else if (Math.sqrt(n) % 1 === 0){
+//             res = true
+//         }else {
+//             res = false
+//         }
+//          return res
+//     }
+//    console.log(isSquare(26))
+//
+// //analog
+//     function isSquare(n) {
+//         return Math.sqrt(n) % 1 === 0;
+//         // Math.sqrt находит квадрат числа, далее % проверяет есть ли остаток от деления и является ил число целым
+//     }
 </script>
 </body>
 </html>
