@@ -760,6 +760,46 @@ console.log(matches_array);
 //         return Math.sqrt(n) % 1 === 0;
 //         // Math.sqrt находит квадрат числа, далее % проверяет есть ли остаток от деления и является ил число целым
 //     }
+
+    //52
+
+    // function XO(str) {
+    //     let x = []
+    //     let o = []
+    //     let res = str.toLowerCase().split('')
+    //     for (i = 0; i < str.length; i++) {
+    //         if (res[i] === 'x') {
+    //             x.push(res[i])
+    //         } else if (res[i] === 'o') {
+    //             o.push(res[i])
+    //         }
+    //     }
+    //     return x.length === o.length
+    // }
+
+// //analog
+//     function XO(str) {
+//         let x = str.match(/x/gi);
+//         let o = str.match(/o/gi); //match находит все совпадения и записывает в массив
+//
+//         return (x && x.length) === (o && o.length);
+//         //(x && x.length) === (o && o.length); - защита от null, если написать без х\о, выдаст ошибку
+//     }
+
+    //53 вернуть только числа
+
+    // function filter_list(l) {
+    //     return l.filter(item => typeof item === "number")
+    // }
+    // //analog
+    // function filter_list(l) {
+    //     return l.filter(Number.isInteger);
+    // }
+//при использовании   l.filter(Number) строки такжесчитаются числом
+//     console.log(filter_list([1,2,'aasf','1','123',123]))
+
+    //54
+
 </script>
 </body>
 </html>
