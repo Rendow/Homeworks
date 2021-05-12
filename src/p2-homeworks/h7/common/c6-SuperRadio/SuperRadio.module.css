@@ -13,7 +13,7 @@
     border: 2px solid cadetblue;
 }
 .radio:checked{
-    background: darkred;
+    background: cadetblue;
 }
 .radio:focus{
     border: 2px solid cadetblue;

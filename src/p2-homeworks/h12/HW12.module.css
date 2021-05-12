@@ -1,23 +1,32 @@
 .dark {
-    background: dimgrey;
+    background: linear-gradient(72deg, rgba(247,247,247,1) , rgb(49, 40, 40) 100%);
+
 }
 
 .dark-text {
-    color: aliceblue;
+    color: black;
 }
 
 .red {
-    background: lightcoral;
+    color: black;
+    background: linear-gradient(72deg, rgba(247,247,247,1) , rgba(246,9,9,1) 100%);
 }
 
 .red-text {
-    color: aqua;
+    color: black;
 }
 
-.some {
-    background: lightgreen;
+.inexpressible-text {
+    color: rgb(226, 182, 218);
 }
 
-.some-text {
-    color: darkslateblue;
+.france {
+    background: rgb(0,83,255);
+    background: linear-gradient(75deg, rgba(0,83,255,1) 0%, rgba(247,247,247,1) 50%, rgba(246,9,9,1) 100%);
+}
+.inexpressible{
+    color: rgb(226, 182, 218);
+    background: rgb(163, 27, 149);
+    background: linear-gradient(12deg,   rgba(0,83,255,1) 0%,rgba(246,9,9,1) 100%, rgba(247,247,247,1) 50%);
+
 }

@@ -888,46 +888,47 @@ console.log(matches_array);
     // console.log(printerError(st))
 
 
-    //58 n - колво нечетный цифр(odd), сложить эти числа
+ //58 n - колво нечетный цифр(odd), сложить эти числа
 
-    function rowSumOddNumbers(n) {
-        if(n === 1){
-            return 1
-        }
-        let arr = []
-        let j = 2
-        while (arr.length < n) {
-            j++
-            if (j % 2 !== 0) {
-                arr.push(j)
-            }
-        }
-        return arr.reduce((a,b) => a+b)
-    }
-
-
-    //58.1 пирамида нечетный чисел
-    function rowSumOddNumbers(n) {
-       let firstNum = (n * n) - (n - 1)
-        let count = 0
-        let res = 0
-        while (count < n) {
-            if (firstNum % 2 !== 0) {
-                res += firstNum
-                count ++
-                debugger
-            }
-            firstNum++
-        }
-        return res
-    }
-
-    //analog
-    function rowSumOddNumbers(n) {
-        return Math.pow(n, 3);
-        //Math.pow(n, 3); где 3 - степень
-    }
-    console.log(rowSumOddNumbers(42))
+    //
+    // function rowSumOddNumbers(n) {
+    //     if(n === 1){
+    //         return 1
+    //     }
+    //     let arr = []
+    //     let j = 2
+    //     while (arr.length < n) {
+    //         j++
+    //         if (j % 2 !== 0) {
+    //             arr.push(j)
+    //         }
+    //     }
+    //     return arr.reduce((a,b) => a+b)
+    // }
+    //
+    //
+    // //58.1 пирамида нечетный чисел
+    // function rowSumOddNumbers(n) {
+    //    let firstNum = (n * n) - (n - 1)
+    //     let count = 0
+    //     let res = 0
+    //     while (count < n) {
+    //         if (firstNum % 2 !== 0) {
+    //             res += firstNum
+    //             count ++
+    //             debugger
+    //         }
+    //         firstNum++
+    //     }
+    //     return res
+    // }
+    //
+    // //analog
+    // function rowSumOddNumbers(n) {
+    //     return Math.pow(n, 3);
+    //     //Math.pow(n, 3); где 3 - степень
+    // }
+    // console.log(rowSumOddNumbers(42))
 
 
 
