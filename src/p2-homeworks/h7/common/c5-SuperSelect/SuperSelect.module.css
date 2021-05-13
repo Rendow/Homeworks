@@ -1,25 +1,27 @@
+
 .select {
-    width: 100px;
-    padding: 5px;
-    margin: 10px;
-
+    width: 100%;
+    min-width: 15ch;
+    max-width: 20ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
     cursor: pointer;
-    background-color: plum;
-    outline: none;
-
-    border: 2px inset  blueviolet;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
 }
-.select:focus{
-    border: 2px  inset #1f0239;
-    outline: none;
+.select::after {
+    content: "";
+    width: 0.8em;
+    height: 0.5em;
+    background-color: black;
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+:root {
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
 }
 
-.option {
-
-}
-.option:focus {
-
-}
-.option:checked {
-
-}
