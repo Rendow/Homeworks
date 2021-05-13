@@ -15,7 +15,6 @@ function HW12() {
     const handleCallback = (value:ThemeType) => {
       dispatch(changeThemeC(value))
     }
-    console.log(theme)
     return (
         <div className={s[theme]}>
             <hr/>
