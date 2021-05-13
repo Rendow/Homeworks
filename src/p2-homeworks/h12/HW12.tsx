@@ -19,7 +19,6 @@ function HW12() {
         <div className={s[theme]}>
             <hr/>
             <span className={s[theme + '-text']}>
-                homeworks 12
             </span>
             <SuperRadio
                 name={'radio'}
