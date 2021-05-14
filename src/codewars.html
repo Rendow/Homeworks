@@ -952,6 +952,30 @@ console.log(matches_array);
     // }
     // console.log(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]])) //['Open', 'Senior', 'Open', 'Senior'])
 
+//60
+
+/*
+
+    function longest(s1, s2) {
+        let arr1 = [...s1,...s2]
+        let arr2 = []
+
+        let res1 = arr1.sort()
+        for (i = 0; i < res1.length; i++){
+            if(res1[i] !== res1[i+1]) arr2.push(res1[i])
+        }
+        return  arr2.join('')
+    }
+
+    //analog
+
+    const longest = (s1, s2) => [...new Set(s1+s2)].sort().join('')
+
+    console.log(longest("aretheyhere", "yestheyarehere"))
+     //aehrsty
+
+*/
+
 
 
 </script>
