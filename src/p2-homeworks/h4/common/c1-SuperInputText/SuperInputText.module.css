@@ -1,6 +1,10 @@
 .superInput {
+    border: #303f9f solid 2px;
+    font-size: 16px;
+    border-radius: 13px;
+    padding: 5px;
+    resize: none;
     outline: none;
-    margin: 10px;
 }
 
 .superInput:focus {
@@ -8,10 +12,11 @@
 }
 
 .errorInput {
-    border: 2px solid darkred;
+    border: #8e2121 solid 2px;
     background: aliceblue;
 }
 
 .error {
-    color: red;
+    color: #8e2121;
+    font-size: 16px;
 }
