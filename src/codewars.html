@@ -1058,6 +1058,18 @@ console.log(matches_array);
     //
     // console.log(number([[10,0],[3,5],[5,8]])) // 5
 
+
+    //66  942  -->  9 + 4 + 2 = 15  -->  1 + 5 = 6
+
+    function digital_root(n) {
+        let res = n.toString().split('').map(Number).reduce((a,b)=>a+b).toString()
+        for (i = 0; i <= res.length;i++ ){
+           res = res.split('').map(Number).reduce((a,b)=>a+b).toString()
+        }
+        return Number(res)
+    }
+
+    console.log(digital_root(942)) // 7
 </script>
 </body>
 </html>
