@@ -1198,6 +1198,44 @@ console.log(matches_array);
 //   return letter.map((lett) => (obj[lett] === 1 ? "(" : ")")).join("");
 // }
 // console.log(duplicateEncode("err"));
+    
+        //73
+ // function duplicateCount(text) {
+//   let word = text.toLowerCase().split("");
+//   let obj = {};
+//   let arr = [];
+
+//   for (let i = 0; i < word.length; i++) {
+//     let x = word[i];
+//     if (obj[x] === undefined) {
+//       obj[x] = 1;
+//     } else {
+//       obj[x] += 1;
+//     }
+//   }
+//   for (let key in obj) {
+//     if (obj[key] > 1) arr.push(1);
+//   }
+
+//   return arr.length > 0 ? arr.reduce((a, b) => a + b) : 0;
+// }
+// console.log(duplicateCount("aabbcde")); //2
+// console.log(duplicateCount("Indivisibility"));
+// console.log(duplicateCount(""));
+
+    
+    //74
+// function findOutlier(num){
+//  let odd = []
+//  let even = []
+
+// num.map(n => n %2 ? odd.push(n) : even.push(n) )
+// return  odd.length === 1 ? odd[0] : even[0]
+// }
+// console.log(findOutlier([0, 1, 2])) //1
+// console.log(findOutlier([1, 2, 3])) //2
+// console.log(findOutlier([2,6,8,10,3])) //3
+
 
 </script>
 </body>
