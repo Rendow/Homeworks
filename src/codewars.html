@@ -1280,6 +1280,72 @@ console.log(matches_array);
     
 // console.log(DNAStrand("ATTGC"))//TAACG
     
+    
+//78 привести число к простому, вернуть колво умножений
+// 25 = 2*5 = 10; 10 = 1*0  = 0; колво умножений = 2
+
+// function persistence(num) {
+// let count = 0
+//     while(num.toString().length !== 1){
+// count++
+// let arr = num.toString().split('')
+// num = arr.reduce((a,b) => {
+//   return Number(a * b)
+// })
+//     }
+//     return count
+// }
+
+//  console.log(persistence(25)); //2
+// persistence(39) === 3 because 3*9 = 27, 2*7 = 14, 1*4=4
+// and 4 has only one digit
+
+// 79 разница между массивом а и б
+
+// function array_diff(a, b) {
+//   return a.filter((e) => !b.includes(e));
+// }
+
+//analog
+
+// function array_diff(a, b) {
+//   b = new Set(b)
+//   return a.filter(v => !b.has(v))
+// }
+
+//wrong way
+
+// function arrayDiff(a, b) {
+//   if (a.length === 0) return [];
+//   let arr = [];
+//   let obj = {};
+//   for (let i = 0; i < a.length; i++) {
+//     let x = a[i];
+//     if (obj[x] === undefined) {
+//       obj[x] = 1;
+//     } else {
+//       obj[x] += 1;
+//     }
+//   }
+//   for (let i = 0; i < b.length; i++) {
+//     let x = b[i];
+//     if (obj[x] === undefined) {
+//       obj[x] = 1;
+//     } else {
+//       obj[x] += 1;
+//     }
+//   }
+//   for (let key in obj) {
+//     if (obj[key] === 1) arr.push(Number(key));
+//   }
+
+//   return arr.sort((first, sec) => a.indexOf(first) - a.indexOf(sec));
+// }
+
+//console.log(arrayDiff([1, 8, 2], [])); //[]
+//console.log(arrayDiff([3,4], [3])); //[4]
+
+    
 </script>
 </body>
 </html>
